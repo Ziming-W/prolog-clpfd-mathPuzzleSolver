@@ -125,9 +125,7 @@ puzzle_solution(Puzzle) :-
         [_|Cs] = Columns, 
         maplist(check_sum_product, Cs), 
 
-        %%%% This is only for solving puzzle with multiple solutions
-        % which is not actually needed in this assignment since the test will
-        % only based on at most one solution puzzle
+        %%%% solving puzzle with multiple solutions
         maplist(label, Puzzle).  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
